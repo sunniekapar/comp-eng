@@ -1,14 +1,17 @@
 //import SquareButton from "./components/SquareButton.tsx";
+import Footer from "./components/layouts/Footer.tsx";
 import Header from "./components/layouts/Header.tsx";
+import Navbar from "./components/layouts/Navbar.tsx";
 import Resources from "./components/layouts/Resources.tsx";
+import { ThemeProvider } from "./components/ui/theme-provider.tsx";
 export default function App() {
   return (
-    <>
-      <Header />
-      <Resources />
-    </>
-    // <div className="grid w-5/12 grid-cols-3 ">
-    //  <SquareButton name='Druiven Box' color='hover:bg-blue-900' span='col-span-1' href='http://druivenbox.haltonchess.ca/index.html' />
-    // </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <main className="transition-[background] duration-500 font-poppins dark:bg-zinc-950 dark:text-gray-50">
+        <Navbar />
+        <Header />
+        <Footer />
+      </main>
+    </ThemeProvider>
   );
 }
