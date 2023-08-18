@@ -10,6 +10,7 @@ export default function App() {
       <main className="transition-[background] duration-500 font-poppins dark:bg-zinc-950 dark:text-gray-50">
         <Navbar />
         <Header />
+        <Resources />
         <Footer />
       </main>
     </ThemeProvider>
