@@ -2,7 +2,7 @@ import ArrowButton from "../ui/ArrowButton";
 import LetterFadeIn from "../ui/LetterFadeIn";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
-export default function Header() {
+const Header = () => {
   let headerTextSize: string = "text-5xl sm:text-7xl md:text-9xl";
   let subheaderTextSize: string = "text-2xl sm:text-3xl md:text-4xl";
   const [isSubheadingVisible, setIsSubheadingVisible] = useState(false);
@@ -34,4 +34,5 @@ export default function Header() {
       <ArrowButton />
     </header>
   );
-}
+};
+export default Header;

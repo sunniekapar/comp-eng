@@ -8,8 +8,11 @@ import {
 } from "@/components/ui/card";
 
 import { Button } from "@/components/ui/button";
+import { FC } from "react";
 
-export default function DruivenBoxCard() {
+interface DruivenBoxCardProps {}
+
+const DruivenBoxCard: FC<DruivenBoxCardProps> = () => {
   return (
     <Card className="animate-fade-up">
       <CardHeader>
@@ -20,7 +23,9 @@ export default function DruivenBoxCard() {
       </CardHeader>
       <CardContent>
         <Button asChild>
-          <a href="http://druivenbox.haltonchess.ca" target="_blank">View Demo</a>
+          <a href="http://druivenbox.haltonchess.ca" target="_blank">
+            View Demo
+          </a>
         </Button>
       </CardContent>
       <CardFooter>
@@ -30,5 +35,8 @@ export default function DruivenBoxCard() {
       </CardFooter>
     </Card>
   );
-}
+};
+
+export default DruivenBoxCard;
+
 // className="bg-blue-900 hover:bg-blue-500"

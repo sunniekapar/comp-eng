@@ -1,10 +1,11 @@
-export default function LetterFadeIn({
-  word,
-  delay,
-}: {
+import { FC } from "react";
+
+interface LetterFadeInProps {
   word: string;
   delay: number;
-}) {
+}
+
+const LetterFadeIn: FC<LetterFadeInProps> = ({ word, delay }) => {
   const elements: JSX.Element[] = word
     .split("")
     .map((letter: string, i: number) => {
@@ -19,4 +20,6 @@ export default function LetterFadeIn({
       );
     });
   return elements;
-}
+};
+
+export default LetterFadeIn;
