@@ -1,16 +1,18 @@
-import BigNumberCard from "../ui/BigNumberCard";
-import DruivenBoxCard from "../ui/DruivenBoxCard";
-import Overview from "../ui/Overview";
-import { BsCurrencyDollar } from 'react-icons/bs';
-
+import { BsCurrencyDollar, BsLaptop } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
+import {
+  OverviewCard,
+  BigNumberCard,
+  InformationCard,
+  TopicCard,
+} from "../ui/cards";
+
 const Resources = () => {
   return (
-    <section className="grid items-start justify-center gap-6 p-8 mx-auto rounded-lg lg:w-3/6 lg:grid-cols-2 xl:grid-cols-3">
+    <section className="grid items-start justify-center gap-6 p-8 mx-auto rounded-lg lg:grid-cols-2 xl:grid-cols-3">
       <div className="grid items-start col-span-2 gap-6 lg:col-span-1">
         <Fade cascade damping={0.1}>
-          <DruivenBoxCard />
-          <Overview />
+          <OverviewCard />
         </Fade>
       </div>
       <div className="grid items-start col-span-2 gap-6 lg:col-span-1">
@@ -18,17 +20,24 @@ const Resources = () => {
           <BigNumberCard
             number="$129,000"
             title="Average Salary"
-            icon={<BsCurrencyDollar/>}
+            icon={<BsCurrencyDollar />}
             description="As a Computer Engineer in California"
           />
-          <DruivenBoxCard />
-          <DruivenBoxCard />
+          <InformationCard
+            icon={<BsLaptop />}
+            title="What is Computer Engineering"
+            description="Computer engineering is the field where people make computers do amazing things. They design both the physical parts inside computers and the programs that tell them what to do. It's like building and programming the machines that power our digital world."
+          />
         </Fade>
       </div>
       <div className="grid items-start col-span-2 gap-6 lg:col-span-1">
         <Fade cascade damping={0.1} delay={100}>
-          <DruivenBoxCard />
-          <DruivenBoxCard />
+          <TopicCard
+            title="Druiven Box"
+            description="An interactive web application that develops your knowledge of boolean algebra and logic gates. Designed and made by Sunnie Kapar and Matthew Liu"
+            href="http://druivenbox.haltonchess.ca"
+            buttonText="View Demo" buttonVariant="default"
+          />
         </Fade>
       </div>
     </section>

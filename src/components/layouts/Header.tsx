@@ -7,7 +7,7 @@ const Header = () => {
   let subheaderTextSize: string = "text-2xl sm:text-3xl md:text-4xl";
   const [isSubheadingVisible, setIsSubheadingVisible] = useState(false);
   return (
-    <header className="flex flex-col items-center justify-center w-5/6 min-h-screen mx-auto text-center">
+    <header className="flex flex-col items-center justify-center min-h-screen text-center">
       <div className={`mb-16 ${headerTextSize}`}>
         <Typewriter
           onInit={(typewriter) => {

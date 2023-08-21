@@ -1,7 +1,10 @@
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
-export default function Overview() {
-    const accentColor = "#1e3a8a";
+import { Card, CardContent, CardHeader, CardTitle } from "../card";
+import { FC } from "react";
+
+interface OverviewCardProps {}
+
+const OverviewCard:FC<OverviewCardProps> = () => {
   const data = [
     {
       name: "Computer",
@@ -44,3 +47,4 @@ export default function Overview() {
     </Card>
   );
 }
+export default OverviewCard;
