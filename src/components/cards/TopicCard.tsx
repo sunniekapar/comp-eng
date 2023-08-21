@@ -6,8 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../card";
-import { Button } from "../button";
+} from "../ui/card";
+import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 interface InfoCardProps {
   title: string;
@@ -15,13 +16,14 @@ interface InfoCardProps {
   buttonText: string;
   href: string;
   buttonVariant: "outline" | "default"
+  target?: "_blank" | "_top" | "_parent" 
 }
 
 const InfoCard: FC<InfoCardProps> = ({
   title,
   description,
   buttonText,
-  href, buttonVariant
+  href, buttonVariant, target = "_self"
 }) => {
   return (
     <Card>
@@ -33,9 +35,7 @@ const InfoCard: FC<InfoCardProps> = ({
       </CardContent>
       <CardFooter>
         <Button asChild variant={buttonVariant}>
-          <a href={href} target="_blank">
-            {buttonText}  
-          </a>
+          <Link to={href} target={target}> {buttonText} </Link>
         </Button>
       </CardFooter>
     </Card>

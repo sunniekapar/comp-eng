@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-} from "../card";
+} from "../ui/card";
 import { IconContext } from "react-icons";
 interface BigNumberCardProps {
   title: string;

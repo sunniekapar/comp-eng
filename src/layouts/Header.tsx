@@ -1,5 +1,5 @@
-import ArrowButton from "../ui/ArrowButton";
-import LetterFadeIn from "../ui/LetterFadeIn";
+import ArrowButton from "../components/ui/ArrowButton";
+import LetterFadeIn from "../components/ui/LetterFadeIn";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
 const Header = () => {

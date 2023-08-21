@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../card";
+} from "../ui/card";
 import { IconContext } from "react-icons";
 interface InformationCardProps {
   icon?: ReactNode;

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Card, CardHeader } from "../card";
+import { Card, CardHeader } from "../ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 interface ProfileCardProps {}

@@ -5,11 +5,14 @@ import {
   BigNumberCard,
   InformationCard,
   TopicCard,
-} from "../ui/cards";
+} from "../components/cards";
 
-const Resources = () => {
+const HeroGridSection = () => {
   return (
-    <section className="grid items-start justify-center gap-6 p-8 mx-auto rounded-lg lg:grid-cols-2 xl:grid-cols-3">
+    <section
+      className="grid items-start justify-center gap-6 p-8 mx-auto rounded-lg lg:grid-cols-2 xl:grid-cols-3"
+      id="HeroGridSection"
+    >
       <div className="grid items-start col-span-2 gap-6 lg:col-span-1">
         <Fade cascade damping={0.1}>
           <OverviewCard />
@@ -36,11 +39,20 @@ const Resources = () => {
             title="Druiven Box"
             description="An interactive web application that develops your knowledge of boolean algebra and logic gates. Designed and made by Sunnie Kapar and Matthew Liu"
             href="http://druivenbox.haltonchess.ca"
-            buttonText="View Demo" buttonVariant="default"
+            buttonText="View Demo"
+            buttonVariant="default"
+            target="_blank"
+          />
+          <TopicCard
+            title="Resources"
+            description="Check out some helpful resources"
+            buttonText="See more"
+            buttonVariant="outline"
+            href="/resources"
           />
         </Fade>
       </div>
     </section>
   );
 };
-export default Resources;
+export default HeroGridSection;

@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-4/6 p-10 mx-auto text-center lg:text-left lg:flex-row">
       <p className="mb-6 font-thin lg:mr-auto text-md lg:mb-0">
-        Copyright ©️ 2023 •<span className=""> Designed by Sunnie Kapar</span>
+        Copyright ©️ 2023 •<span className=""> Designed and made by Sunnie Kapar</span>
       </p>
       <div>
         <a href="https://github.com/sunniekapar" target="_blank">
