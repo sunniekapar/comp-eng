@@ -1,7 +1,7 @@
 import { ThemeToggle } from "../ui/ThemeToggle";
 const Navbar = () => {
   return (
-    <nav className="flex flex-row-reverse p-5">
+    <nav className="sticky top-0 flex flex-row-reverse p-5">
       <ThemeToggle></ThemeToggle>
     </nav>
   );

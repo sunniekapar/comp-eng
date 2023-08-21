@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-} from "./card";
+} from "../card";
 import { IconContext } from "react-icons";
 interface BigNumberCardProps {
   title: string;
@@ -25,7 +25,7 @@ const BigNumberCard: FC<BigNumberCardProps> = ({
       <CardHeader className="flex-row items-center justify-between pb-2">
         <p className="font-semibold">{title}</p>
         {icon ? (
-          <IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
+          <IconContext.Provider value={{ className: "mt-0" }}>
             {icon}
           </IconContext.Provider>
         ) : null}
