@@ -10,4 +10,5 @@ CompEng is my first front-end React project. The purpose of this project is to f
 - react-reveal: https://github.com/morellodev/react-awesome-reveal
 - tailwind-animated: https://github.com/new-data-services/tailwindcss-animated
 - shadcn/ui: https://ui.shadcn.com
+- tailwind-scollbar: https://github.com/adoxography/tailwind-scrollbar
 
