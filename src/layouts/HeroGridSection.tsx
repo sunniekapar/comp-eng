@@ -52,7 +52,7 @@ const HeroGridSection = () => {
           />
         </Fade>
       </div>
-    </section>
+    </section>    
   );
 };
 export default HeroGridSection;
