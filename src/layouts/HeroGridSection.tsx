@@ -15,6 +15,13 @@ const HeroGridSection = () => {
     >
       <div className="grid items-start col-span-2 gap-6 lg:col-span-1">
         <Fade cascade damping={0.1}>
+          <TopicCard
+            title="Resources"
+            description="Check out some helpful resources"
+            buttonText="See more"
+            buttonVariant="outline"
+            href="/resources"
+          />
           <OverviewCard />
         </Fade>
       </div>
@@ -43,16 +50,9 @@ const HeroGridSection = () => {
             buttonVariant="default"
             target="_blank"
           />
-          <TopicCard
-            title="Resources"
-            description="Check out some helpful resources"
-            buttonText="See more"
-            buttonVariant="outline"
-            href="/resources"
-          />
         </Fade>
       </div>
-    </section>    
+    </section>
   );
 };
 export default HeroGridSection;

@@ -5,4 +5,7 @@
   html {
     scroll-behavior: smooth;
   }
+  body {
+    @apply transition-[background] duration-500 font-poppins dark:bg-zinc-950 dark:text-gray-50
+  }
 }

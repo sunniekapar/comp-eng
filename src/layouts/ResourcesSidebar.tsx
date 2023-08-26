@@ -1,4 +1,4 @@
-import { data } from "@/data/data";
+import { lessons } from "@/data/data";
 import {
   AccordionItem,
   AccordionTrigger,
@@ -9,23 +9,23 @@ import { FC, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import LessonButton from "@/components/ui/LessonButton";
 
 interface ResourcesSidebarProps {}
 
 const ResourcesSidebar: FC<ResourcesSidebarProps> = () => {
-  const cards = data.map((card, index) => {
+  const cards = lessons.map((card, index) => {
     return (
       <AccordionItem key={index} value={`item-${index}`}>
         <AccordionTrigger className="text-left">{card.unit}</AccordionTrigger>
         <AccordionContent>
           {card.lessons.map((lesson, index) => {
             return (
-              <div
+              <LessonButton
                 key={index}
-                className="p-5 mb-3 bg-white border rounded-lg shadow-sm border-zinc-200 text-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50"
-              >
-                {lesson}
-              </div>
+                lessonTitle={lesson.title}
+                fileType={lesson.fileType}
+              />
             );
           })}
         </AccordionContent>
@@ -55,4 +55,3 @@ const ResourcesSidebar: FC<ResourcesSidebarProps> = () => {
 };
 
 export default ResourcesSidebar;
-

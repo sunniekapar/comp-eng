@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'poppins': ['poppins']
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
